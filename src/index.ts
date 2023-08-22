@@ -1,11 +1,12 @@
-import express from 'express';
-import mongoose from "mongoose";
-import bodyParser from "body-parser";
+import express from 'express'
+import mongoose from "mongoose"
+import bodyParser from "body-parser"
 import cors from "cors"
-import { Request, Response } from "express";
+import { Request, Response } from "express"
 import ticketsRouter from "./routes/tickets"
 import userRouter from "./routes/user"
-
+import dotenv from "dotenv"
+dotenv.config();
 
 const app = express();
 
@@ -19,15 +20,15 @@ app.use(cors());
 
 app.use('/api/v1/tickets', ticketsRouter);
 app.use('/api/v1/user', userRouter);
-// app.use('/', (req:Request, res:Response) => {
-//     res.send("main page")
-// });
+app.use('/', (req:Request, res:Response) => {
+    res.send("main page")
+});
 
 
 
-const CONNECTION_URL = "mongodb+srv://Anas:Anas22as@cluster0.hjsm5z1.mongodb.net/?retryWrites=true&w=majority";
-const PORT = 5000;
+const PORT = process.env.PORT ||  5000;
+const dbUrl = process.env.MONGODB_URL;
 
-mongoose.connect(CONNECTION_URL)
+mongoose.connect(dbUrl)
     .then(() => app.listen(PORT, () => console.log(`server running on port ${PORT}`)))
     .catch((error) => console.log(error.message))
