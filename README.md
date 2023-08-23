@@ -6,7 +6,7 @@ Ticket system is simple project for creating CURD (create, update, read and dele
 I used the following library: -
 - Node.js for bulding the project.    
 - TypeScript for set up the project.
-- Exprees.Js for budling an API.
+- Exprees.Js for budling APIs.
 - Mongoose for database.
 
 
