@@ -12,7 +12,7 @@ I used the following library: -
 
 
 #### Running Project
-Please type `npm start` to install the dependencies. 
+Please type `npm install` to install the dependencies. 
 Once it is done, type `nodemon src/index.ts` to start the project
 
 
