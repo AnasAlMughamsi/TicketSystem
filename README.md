@@ -1,12 +1,14 @@
-# TicketSystem
+# Ticket System - Project Assignment:
 
 ### About the Ticket System project
 Ticket system is simple project for creating CURD (create, update, read and delete) for both the user model and ticket model.
 
 I used the following library: -
-- Exprees.Js for budling an API
-- Mongoose for database
-- TypeScript for set up the project
+- Node.js for bulding the project.    
+- TypeScript for set up the project.
+- Exprees.Js for budling an API.
+- Mongoose for database.
+
 
 
 #### Running Project
