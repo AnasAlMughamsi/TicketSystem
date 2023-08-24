@@ -28,18 +28,18 @@ nodemon src/index.ts
 
 
 ## Documentation
-Folder Structure
-All the server source code will be inside src directory. Inside src, there will be: -
-- controllers
-- models
-- routes
+### Folder Structure
+All the server source code will be inside src directory, it contains the following folders :-
+- controllers 
+- models 
+- routes 
 - index.ts
 
 ### Nodemon
 Nodemon is a utility that will monitor for any changes in the server source code and it automatically restart the server. 
 
 ### Express
-Express is a web application framework for Node.js. It is used to build our backend API's.
+Express is a web application framework for Node.js. It is used to build backend API's.
 
 ### Mongoose
 Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment. It also provides a straight-forward, schema-based solution to model application data
