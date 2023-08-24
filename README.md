@@ -10,13 +10,39 @@ I used the following library: -
 - Mongoose for database.
 
 
+## Quick Start
+```
+# Clone the repository
+git clone https://github.com/AnasAlMughamsi/TicketSystem.git
 
-#### Running Project
-Please type `npm install` to install the dependencies. 
-Once it is done, type `nodemon src/index.ts` to start the project
+# Go inside the directory
+cd TicketSystem
+
+# Install dependencies
+npm install
+
+# Start the server
+nodemon src/index.ts
+```
 
 
 
+## Documentation
+Folder Structure
+All the server source code will be inside src directory. Inside src, there will be: -
+- controllers
+- models
+- routes
+- index.ts
+
+### Nodemon
+Nodemon is a utility that will monitor for any changes in the server source code and it automatically restart the server. 
+
+### Express
+Express is a web application framework for Node.js. It is used to build our backend API's.
+
+### Mongoose
+Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment. It also provides a straight-forward, schema-based solution to model application data
 
 
 ## API Documentation
